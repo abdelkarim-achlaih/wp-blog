@@ -14,17 +14,20 @@
               <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card">
                   <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']); ?>
-                  <div class="card-infos">
+                  <div class="card-infos text-white">
                     <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
                     <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
                     <span><i class="fa-solid fa-comment"></i><?php comments_number(); ?></span>
                   </div>
-                  <div class="card-body">
-                    <h5 class="card-title fs-3 fw-bold"><?php the_title(); ?></h5>
-                    <p class="card-text fs-6 lh-sm"><?php the_excerpt(); ?></p>
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 fw-bold lh-base"><?php the_title(); ?></h5>
+                    <p class="card-text lh-sm "><?php the_excerpt(); ?></p>
                     <div class="m-card-footer d-flex justify-content-between align-items-center">
                       <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read more</a>
-                      <span class="text-end"><i class="fa-solid fa-tag"></i><?php the_category(', '); ?></span>
+                      <span class="text-end">
+                        <i class="fa-solid fa-tag"></i>
+                        <?php the_category(', '); ?>
+                      </span>
                     </div>
                   </div>
                 </div>
