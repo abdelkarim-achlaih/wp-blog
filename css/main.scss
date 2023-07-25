@@ -237,6 +237,14 @@ footer {
 
 			}
 		}
+
+		.latest-info img {
+			transition: $duration;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
 	}
 }
 
@@ -266,10 +274,24 @@ footer {
 	.card {
 		background-color: #152744;
 		transition: $duration;
+		overflow: hidden;
+
+		.img-holder {
+			overflow: hidden;
+		}
+
+		img {
+			transition: $duration;
+		}
+
+		&:hover img {
+			transform: scale(1.1);
+		}
 
 		&:hover {
 			transform: translateY(-5px);
 		}
+
 
 		.card-infos {
 			font-size: 11px;

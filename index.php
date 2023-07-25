@@ -13,7 +13,9 @@
             ?>
               <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card">
-                  <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']); ?>
+                  <div class="img-holder">
+                    <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']); ?>
+                  </div>
                   <div class="card-infos text-white">
                     <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
                     <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
