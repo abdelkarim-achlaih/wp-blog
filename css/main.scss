@@ -578,3 +578,46 @@ footer {
 
 /* End Comments Section */
 /* ------------------------------------ End Blog Post Page ------------------------------------ */
+/* ------------------------------------ Start Author Page ------------------------------------ */
+.author-page {
+	.author-meta {
+		img {
+			border-radius: 50%;
+			box-shadow: 10px 0px 20px 5px rgb(227 87 239 / 29%);
+		}
+
+		h3,
+		p {
+			position: relative;
+
+			&::after {
+				content: '';
+				background-color: $three;
+				position: absolute;
+				border-radius: 5px;
+			}
+		}
+
+		h3 {
+			&::after {
+				bottom: -15px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 130px;
+				height: 5px;
+			}
+		}
+
+		p {
+			&::after {
+				top: 50%;
+				left: -20px;
+				transform: translateY(-50%);
+				width: 5px;
+				height: 100%;
+			}
+		}
+	}
+}
+
+/* ------------------------------------ End Author Page ------------------------------------ */

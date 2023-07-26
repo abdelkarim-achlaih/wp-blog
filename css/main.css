@@ -437,4 +437,36 @@ footer .social a svg:hover {
 }
 
 /* End Comments Section */
-/* ------------------------------------ End Blog Post Page ------------------------------------ *//*# sourceMappingURL=main.css.map */
+/* ------------------------------------ End Blog Post Page ------------------------------------ */
+/* ------------------------------------ Start Author Page ------------------------------------ */
+.author-page .author-meta img {
+  border-radius: 50%;
+  box-shadow: 10px 0px 20px 5px rgba(227, 87, 239, 0.29);
+}
+.author-page .author-meta h3,
+.author-page .author-meta p {
+  position: relative;
+}
+.author-page .author-meta h3::after,
+.author-page .author-meta p::after {
+  content: "";
+  background-color: #e357ef;
+  position: absolute;
+  border-radius: 5px;
+}
+.author-page .author-meta h3::after {
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 5px;
+}
+.author-page .author-meta p::after {
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 100%;
+}
+
+/* ------------------------------------ End Author Page ------------------------------------ *//*# sourceMappingURL=main.css.map */
