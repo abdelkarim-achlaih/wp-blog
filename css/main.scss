@@ -253,6 +253,17 @@ footer {
 @media (max-width: 991px) {
 	.latest {
 		height: auto;
+
+		.container .latest-title {
+			&::after {
+				top: unset;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 5px;
+				width: 50%;
+			}
+		}
 	}
 
 	.overlay {

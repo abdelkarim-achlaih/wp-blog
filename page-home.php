@@ -2,7 +2,7 @@
 <section class="overlay"></section>
 <section class="latest lh-lg p-0">
   <div class="mobile-overlay"></div>
-  <div class="container text-center text-lg-start h-100 d-flex align-content-lg-around flex-wrap justify-content-center justify-content-md-start">
+  <div class="container pt-5 pb-5 pt-lg-0 pb-lg-0 text-center text-lg-start h-100 d-flex align-content-lg-around flex-wrap justify-content-center justify-content-lg-start">
     <?php
       $args = array(
           'post_type' => 'post', // Set the post type to 'post' to retrieve blog posts
@@ -15,7 +15,7 @@
             $query->the_post();
             ?>
             
-    <div class="latest-title text-white p-0 ps-5 pb-2 mb-2">
+    <div class="latest-title text-white p-0 ps-lg-5 ps-0 pb-4 pb-lg-2 mb-lg-2 mb-4">
       <h1 class="fs-2 fw-bold mb-3">
         Latest Blog
       </h1>
@@ -27,7 +27,7 @@
     <div class="latest-info">
       <div class="row">
         <div class="col-lg-1"></div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 mb-4 mb-lg-0">
           <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid rounded-4', 'alt' => 'Feature blog image']);?>
         </div>
         <div class="col-lg-1"></div>
