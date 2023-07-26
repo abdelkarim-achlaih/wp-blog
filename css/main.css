@@ -98,6 +98,7 @@ footer p {
 }
 footer h2 {
   font-size: 17px;
+  color: #565cee;
 }
 footer img {
   max-width: 80px;
@@ -107,10 +108,10 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: white !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 footer ul li a:hover, footer ul li a:focus {
-  color: #e357ef !important;
+  color: white !important;
 }
 footer a.btn {
   background-color: #565cee !important;
