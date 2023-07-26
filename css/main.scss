@@ -3,13 +3,15 @@
 $main: #705aed;
 $second: #565cee;
 $three: #e357ef;
+$main-dark: #101928;
+$second-dark: #152744;
 $duration: 0.4s;
 
 /* End Variables */
 /* Start Global Rules */
 body {
 	font-family: 'Poppins', sans-serif !important;
-	background-color: #101928 !important;
+	background-color: $main-dark !important;
 }
 
 section {
@@ -44,15 +46,13 @@ a {
 	a {
 		text-decoration: none;
 		background-color: $main;
-		color: $second;
 		border-radius: 50rem;
 		padding: 0.375rem 0.75rem;
 		transition: $duration;
-		border: 1px solid $second;
 
 		&:hover {
-			background-color: $second;
-			color: $main;
+			background-color: $three;
+			color: white !important;
 		}
 	}
 
@@ -117,7 +117,7 @@ header {
 /* End Header */
 /* Start Footer Section */
 footer {
-	background-color: $second;
+	background-color: $second-dark;
 
 	p {
 		font-size: 13px;
@@ -148,10 +148,10 @@ footer {
 	}
 
 	a.btn {
-		background-color: $three !important;
+		background-color: $second !important;
 
 		&:hover {
-			color: $three !important;
+			color: $second !important;
 			background-color: transparent !important;
 			;
 		}
@@ -272,7 +272,7 @@ footer {
 /* Start Blogs Section */
 .blogs {
 	.card {
-		background-color: #152744;
+		background-color: $second-dark;
 		transition: $duration;
 		overflow: hidden;
 
@@ -347,66 +347,39 @@ footer {
 /* ------------------------------------ Start Blog Post Page ------------------------------------ */
 /* Start Blog Post Section */
 .blog-post {
-	background-color: #f6f6f8;
+	background-color: $main-dark;
 
-	.blog-post-author {
-		position: relative;
+	.blog-post-item {
+		background-color: $second-dark;
 
-		img {
-			width: 150px;
-			border: 10px solid white;
-			top: -30px;
-			position: relative;
-			border-radius: 50%;
-		}
-
-		span {
-			margin-top: -20px;
-			display: block;
-		}
-	}
-
-	.blog-post-data {
-		span {
-			font-size: 17px;
-
-			svg {
-				color: $main;
-				margin-right: 10px;
+		.blog-post-author-meta {
+			img {
+				width: 50px;
+				border-radius: 50%;
+				margin-right: 20px;
 			}
-		}
 
-		.post-category {
-			a {
-				color: $second;
+			span {
+				font-size: 14px;
+				margin-right: 20px;
+				white-space: nowrap;
 
-				&:hover {
-					color: $main;
+				svg {
+					margin-right: 8px;
+					color: $main !important;
 				}
 			}
-		}
-	}
 
-	.card {
-		border-color: $main !important;
-
-		.card-header {
-			color: $main;
-			border-color: $main !important;
-			background-color: $second;
 		}
 
-		.card-body {
-			img {
-				border-radius: 45% 75%;
-			}
+		.blog-post-title h1 {
+			width: 85%;
+		}
 
-			&:not(:last-of-type) {
-				border-bottom: 1px solid $main;
-			}
-
-			.card-title {
-				color: $second;
+		.blog-post-content {
+			* {
+				font-size: 15px;
+				text-align: justify;
 			}
 		}
 	}
@@ -434,6 +407,40 @@ footer {
 			}
 		}
 	}
+
+	.card {
+		border-color: $main !important;
+		background-color: $second-dark;
+
+		.card-header {
+			color: $main;
+			border-color: $main !important;
+			background-color: transparent;
+		}
+
+		.card-body {
+			img {
+				border-radius: 45% 75%;
+			}
+
+			&:not(:last-of-type) {
+				border-bottom: 1px solid $main;
+			}
+
+			.card-title {
+				color: $second;
+				font-size: 16px;
+			}
+
+			p {
+				color: rgba(255, 255, 255, .5) !important;
+				font-size: 12px;
+				text-align: justify;
+			}
+		}
+	}
+
+
 }
 
 /* End Blog Post Section */
@@ -452,7 +459,6 @@ footer {
 					border-radius: 50%;
 				}
 
-				h4,
 				p {
 
 					a {
@@ -469,6 +475,11 @@ footer {
 				.says {
 					display: none;
 				}
+			}
+
+			.comment-content p {
+				font-size: 15px;
+				line-height: 1.8;
 			}
 
 			.awaiting {
@@ -534,7 +545,9 @@ footer {
 		}
 
 		.logged-in-as {
+			font-size: 13px;
 			font-style: italic;
+			color: rgba(255, 255, 255, .5) !important;
 
 			a {
 				color: $main;

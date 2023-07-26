@@ -144,9 +144,9 @@ function mytheme_comment($comment, $args, $depth) {
                 ?>
             </div>
             <div class="col-md-10 ps-md-5">
-                <h4 class="fw-bold"><?php echo get_comment_author_link()?></h4>
-                <p class="text-black-50">
-                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+                <h4 class="fw-bold text-white"><?php comment_author()?></h4>
+                <p>
+                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" class="text-white-50">
                         <?php
                             /* translators: 1: date, 2: time */
                             printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time());
@@ -167,7 +167,7 @@ function mytheme_comment($comment, $args, $depth) {
                 }
             ?>
         </div>
-        <div class="comment-content fs-5 mb-2 text-center text-md-start">
+        <div class="comment-content fs-5 mb-2 text-center text-md-start text-white">
             <?php comment_text(); ?>
         </div>
         <div class="reply">
