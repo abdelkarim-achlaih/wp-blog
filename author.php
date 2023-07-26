@@ -5,7 +5,7 @@
       <?php echo get_avatar(get_the_author_meta('ID'), 180) ?>
       <h3 class="text-white mt-5 mb-5"><?php the_author_meta('nickname');?></h3>
       <div class="text-white-50 d-flex justify-content-center">
-        <p class="w-50 text-start mb-5"><?php the_author_meta('description'); ?></p>
+        <p class="text-start mb-5"><?php the_author_meta('description'); ?></p>
       </div>
     </div>
     <div class="row text-center text-md-start">

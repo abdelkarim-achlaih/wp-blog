@@ -461,6 +461,9 @@ footer .social a svg:hover {
   width: 130px;
   height: 5px;
 }
+.author-page .author-meta p {
+  width: 50%;
+}
 .author-page .author-meta p::after {
   top: 50%;
   left: -20px;
@@ -469,4 +472,9 @@ footer .social a svg:hover {
   height: 100%;
 }
 
+@media (max-width: 991px) {
+  .author-page .author-meta p {
+    width: 80%;
+  }
+}
 /* ------------------------------------ End Author Page ------------------------------------ *//*# sourceMappingURL=main.css.map */

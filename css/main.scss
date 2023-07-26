@@ -609,12 +609,24 @@ footer {
 		}
 
 		p {
+			width: 50%;
+
 			&::after {
 				top: 50%;
 				left: -20px;
 				transform: translateY(-50%);
 				width: 5px;
 				height: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.author-page {
+		.author-meta {
+			p {
+				width: 80%;
 			}
 		}
 	}
