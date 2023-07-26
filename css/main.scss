@@ -620,6 +620,44 @@ footer {
 			}
 		}
 	}
+
+	.author-stats {
+		div {
+			div {
+				background-color: $second-dark;
+
+				span {
+					display: block;
+				}
+
+				span:first-child {
+					font-size: 15px;
+					color: $white-50;
+
+					svg {
+						color: $main;
+						margin-right: 10px;
+					}
+				}
+
+				span:last-child {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+
+	.author-blogs {
+		span {
+			font-size: 12px;
+			margin-right: 20px;
+
+			svg {
+				margin-right: 10px;
+				color: $main;
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {

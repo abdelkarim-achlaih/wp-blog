@@ -471,6 +471,31 @@ footer .social a svg:hover {
   width: 5px;
   height: 100%;
 }
+.author-page .author-stats div div {
+  background-color: #152744;
+}
+.author-page .author-stats div div span {
+  display: block;
+}
+.author-page .author-stats div div span:first-child {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.author-page .author-stats div div span:first-child svg {
+  color: #705aed;
+  margin-right: 10px;
+}
+.author-page .author-stats div div span:last-child {
+  font-size: 50px;
+}
+.author-page .author-blogs span {
+  font-size: 12px;
+  margin-right: 20px;
+}
+.author-page .author-blogs span svg {
+  margin-right: 10px;
+  color: #705aed;
+}
 
 @media (max-width: 991px) {
   .author-page .author-meta p {
