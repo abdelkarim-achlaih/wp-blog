@@ -488,6 +488,21 @@ footer .social a svg:hover {
 .author-page .author-stats div div span:last-child {
   font-size: 50px;
 }
+.author-page .author-blogs h4 {
+  position: relative;
+  width: 100%;
+}
+.author-page .author-blogs h4::after {
+  content: "";
+  background-color: #e357ef;
+  position: absolute;
+  border-radius: 5px;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 100%;
+}
 .author-page .author-blogs span {
   font-size: 12px;
   margin-right: 20px;
@@ -500,6 +515,9 @@ footer .social a svg:hover {
 @media (max-width: 991px) {
   .author-page .author-meta p {
     width: 80%;
+  }
+  .author-page .author-blogs h4 {
+    width: 70%;
   }
 }
 /* ------------------------------------ End Author Page ------------------------------------ *//*# sourceMappingURL=main.css.map */

@@ -648,6 +648,23 @@ footer {
 	}
 
 	.author-blogs {
+		h4 {
+			position: relative;
+			width: 100%;
+
+			&::after {
+				content: '';
+				background-color: $three;
+				position: absolute;
+				border-radius: 5px;
+				top: 50%;
+				left: 15px;
+				transform: translateY(-50%);
+				width: 5px;
+				height: 100%;
+			}
+		}
+
 		span {
 			font-size: 12px;
 			margin-right: 20px;
@@ -665,6 +682,12 @@ footer {
 		.author-meta {
 			p {
 				width: 80%;
+			}
+		}
+
+		.author-blogs {
+			h4 {
+				width: 70%;
 			}
 		}
 	}

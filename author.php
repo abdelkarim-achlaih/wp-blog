@@ -41,6 +41,11 @@
         );
         $query = new WP_Query($args);
         if ($query->have_posts()) {
+          ?>
+          <div class="text-white-50 d-flex justify-content-lg-start justify-content-center">
+            <h4 class="text-white mt-5 mb-5 fs-3 fw-bold ps-5 pt-3 pb-3 text-center text-lg-start"><?php the_author_meta('nickname');?> Posts</h4>
+          </div>
+          <?php
           while ($query->have_posts()) {
             $query->the_post();
             ?>
