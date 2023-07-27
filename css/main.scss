@@ -44,12 +44,20 @@ a {
 }
 
 .pagination {
-	a {
+
+	a,
+	span {
 		text-decoration: none;
 		background-color: $main;
 		border-radius: 50rem;
 		padding: 0.375rem 0.75rem;
 		transition: $duration;
+		margin-right: 15px;
+		color: white !important;
+
+		&.current {
+			background-color: $three;
+		}
 
 		&:hover {
 			background-color: $three;

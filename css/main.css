@@ -32,14 +32,22 @@ a:hover {
   color: #e357ef !important;
 }
 
-.pagination a {
+.pagination a,
+.pagination span {
   text-decoration: none;
   background-color: #705aed;
   border-radius: 50rem;
   padding: 0.375rem 0.75rem;
   transition: 0.4s;
+  margin-right: 15px;
+  color: white !important;
 }
-.pagination a:hover {
+.pagination a.current,
+.pagination span.current {
+  background-color: #e357ef;
+}
+.pagination a:hover,
+.pagination span:hover {
   background-color: #e357ef;
   color: white !important;
 }

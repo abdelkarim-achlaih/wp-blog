@@ -38,7 +38,7 @@
         $args = array(
           'user_id' => get_the_author_meta('ID'),
           'post_type' => 'post', // Set the post type to 'post' to retrieve blog posts
-          'posts_per_page' => 5, // Set the number of posts to display per page
+          'posts_per_page' => 3, // Set the number of posts to display per page
         );
         $query = new WP_Query($args);
         if ($query->have_posts()) {
@@ -67,6 +67,7 @@
             <?php
           }
         }
+        wp_reset_postdata();
       ?>
     </div>
 

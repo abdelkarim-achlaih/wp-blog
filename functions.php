@@ -117,6 +117,7 @@ add_filter('excerpt_length', 'extend_excerpt_length');
 add_filter('excerpt_more', 'extend_excerpt_more');
 
 /* End Excerpt Filters */
+/* Start Comments Template */
 
 function mytheme_comment($comment, $args, $depth) {
     if ( 'div' === $args['style'] ) {
@@ -191,3 +192,18 @@ function mytheme_comment($comment, $args, $depth) {
     <?php 
     endif;
 }
+/* End Comments Template */
+/* Start Pagination */
+function pagiante () {
+    global $wp_query;
+    $number_of_all_pages = $wp_query->max_num_pages;
+    $number_of_current_page = max(1, get_query_var('paged'));
+    if ($number_of_all_pages > 1) {
+        return paginate_links(array (
+            'base'=> get_pagenum_link() . '%_%',
+            'format' => 'page/%#%',
+            'current' => $number_of_current_page
+        ));
+    }
+}
+/* End Pagination */

@@ -39,9 +39,9 @@
         }
       ?>
     </div>
-    <div class="pagination pt-4 pb-5 d-flex justify-content-evenly">
+    <div class="pagination pt-4 pb-5 d-flex justify-content-center">
       <?php
-      if (get_previous_posts_link()) {
+      /*if (get_previous_posts_link()) {
           previous_posts_link('« Prev Page');
         } else {
           ?>
@@ -54,8 +54,9 @@
           ?>
             <span class="btn rounded-pill">Next Page »</span>
           <?php
-        }
+        }*/
       ?>
+      <?php echo paginate_links() ?>
     </div>
   </div>
 </section>
