@@ -690,6 +690,22 @@ footer {
 			}
 		}
 	}
+
+	.author-comments {
+		.author-comment {
+			.author-comment-body {
+				p {
+					font-size: 14px;
+				}
+			}
+
+			.author-comment-blog {
+				span {
+					display: block;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {

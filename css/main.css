@@ -527,6 +527,12 @@ footer .social a svg:hover {
 .author-page .author-comments p svg:last-of-type {
   margin-left: 10px;
 }
+.author-page .author-comments .author-comment .author-comment-body p {
+  font-size: 14px;
+}
+.author-page .author-comments .author-comment .author-comment-blog span {
+  display: block;
+}
 
 @media (max-width: 991px) {
   .author-page .author-meta p {

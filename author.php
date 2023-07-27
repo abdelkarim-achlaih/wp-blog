@@ -84,24 +84,39 @@
         );
         $comments = get_comments($comments_args);
 
-        foreach ($comments as $comment) {
+        if($comments) {
+          foreach ($comments as $comment) {
             ?>
 
               <div class="author-comment col-lg-4 col-md-6 mb-5">
                 <div class="author-comment-body text-white mb-3">
-                  <p class="fs-5 lh-base text-center">
+                  <p class="lh-base text-center">
                     <i class="fa-solid fa-quote-left"></i>
-                    <?php the_title(); ?>
+                    <?php echo $comment->comment_content ?>
                     <i class="fa-solid fa-quote-right"></i>
                   </p>
                 </div>
-                <div class="author-comment-infos text-white-50 text-center">
-                  <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
-                  <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
+                <div class="author-comment-infos text-white-50 text-center mb-3">
+                  <span><i class="fa-solid fa-clock"></i><span class="text-white me-2">Added On </span> <?php echo mysql2date('l, F j, Y', $comment->comment_date) ?></span>
+                </div>
+                <div class="author-comment-blog text-center text-white">
+                  <span>
+                    <span class="mb-2"><i class="fa-solid fa-comment"></i> Added in</span>
+                    <a href="<?php echo get_permalink($comment->comment_post_ID); ?>" class="text-white-50">
+                      <?php echo get_the_title($comment->comment_post_ID); ?>
+                    </a>
+                  </span>
                 </div>
               </div>
             
             <?php
+        }
+        } else {
+          ?>
+            <div class="text-white-50 d-flex justify-content-lg-start justify-content-center">
+              <p><?php the_author_meta('nickname');?> has no comments</p>
+            </div>
+          <?php
         }
       ?>
     </div>
