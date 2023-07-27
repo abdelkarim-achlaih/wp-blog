@@ -488,11 +488,13 @@ footer .social a svg:hover {
 .author-page .author-stats div div span:last-child {
   font-size: 50px;
 }
-.author-page .author-blogs h4 {
+.author-page .author-blogs h4,
+.author-page .author-comments h4 {
   position: relative;
   width: 100%;
 }
-.author-page .author-blogs h4::after {
+.author-page .author-blogs h4::after,
+.author-page .author-comments h4::after {
   content: "";
   background-color: #e357ef;
   position: absolute;
@@ -503,20 +505,35 @@ footer .social a svg:hover {
   width: 5px;
   height: 100%;
 }
-.author-page .author-blogs span {
+.author-page .author-blogs span,
+.author-page .author-comments span {
   font-size: 12px;
   margin-right: 20px;
 }
-.author-page .author-blogs span svg {
+.author-page .author-blogs span svg,
+.author-page .author-comments span svg {
   margin-right: 10px;
   color: #705aed;
+}
+.author-page .author-blogs p svg,
+.author-page .author-comments p svg {
+  color: #705aed;
+}
+.author-page .author-blogs p svg:first-of-type,
+.author-page .author-comments p svg:first-of-type {
+  margin-right: 10px;
+}
+.author-page .author-blogs p svg:last-of-type,
+.author-page .author-comments p svg:last-of-type {
+  margin-left: 10px;
 }
 
 @media (max-width: 991px) {
   .author-page .author-meta p {
     width: 80%;
   }
-  .author-page .author-blogs h4 {
+  .author-page .author-blogs h4,
+  .author-page .author-comments h4 {
     width: 70%;
   }
 }

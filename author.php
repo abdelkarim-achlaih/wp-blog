@@ -36,6 +36,7 @@
     <div class="author-blogs row text-center text-md-start">
       <?php
         $args = array(
+          'user_id' => get_the_author_meta('ID'),
           'post_type' => 'post', // Set the post type to 'post' to retrieve blog posts
           'posts_per_page' => 5, // Set the number of posts to display per page
         );
@@ -68,6 +69,44 @@
         }
       ?>
     </div>
+
+    <div class="author-comments row text-center text-md-start">
+      <div class="text-white-50 d-flex justify-content-lg-start justify-content-center">
+        <h4 class="text-white mt-5 mb-5 fs-3 fw-bold ps-5 pt-3 pb-3 text-center text-lg-start"><?php the_author_meta('nickname');?> Comments</h4>
+      </div>
+      <?php
+        $comments_args = array (
+          'user_id' => get_the_author_meta('ID'),
+          'status' => 'approve',
+          'number' => 5,
+          'post_status' => 'publish',
+          'post_type' => 'post'
+        );
+        $comments = get_comments($comments_args);
+
+        foreach ($comments as $comment) {
+            ?>
+
+              <div class="author-comment col-lg-4 col-md-6 mb-5">
+                <div class="author-comment-body text-white mb-3">
+                  <p class="fs-5 lh-base text-center">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <?php the_title(); ?>
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="author-comment-infos text-white-50 text-center">
+                  <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
+                  <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
+                </div>
+              </div>
+            
+            <?php
+        }
+      ?>
+    </div>
+
+    
 
   </div>
 </section>

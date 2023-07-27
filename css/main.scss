@@ -647,7 +647,8 @@ footer {
 		}
 	}
 
-	.author-blogs {
+	.author-blogs,
+	.author-comments {
 		h4 {
 			position: relative;
 			width: 100%;
@@ -674,6 +675,20 @@ footer {
 				color: $main;
 			}
 		}
+
+		p {
+			svg {
+				color: $main;
+
+				&:first-of-type {
+					margin-right: 10px;
+				}
+
+				&:last-of-type {
+					margin-left: 10px;
+				}
+			}
+		}
 	}
 }
 
@@ -685,7 +700,8 @@ footer {
 			}
 		}
 
-		.author-blogs {
+		.author-blogs,
+		.author-comments {
 			h4 {
 				width: 70%;
 			}
