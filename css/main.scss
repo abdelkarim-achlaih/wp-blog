@@ -422,16 +422,19 @@ footer {
 	}
 
 	.card {
-		border-color: $main !important;
-		background-color: $second-dark;
+		border-color: transparent !important;
+		background-color: $main-dark;
 
 		.card-header {
 			color: $main;
-			border-color: $main !important;
-			background-color: transparent;
+			border-color: transparent !important;
+			background-color: $second-dark;
 		}
 
 		.card-body {
+			background-color: $second-dark;
+			border-color: transparent !important;
+
 			img {
 				border-radius: 45% 75%;
 			}
