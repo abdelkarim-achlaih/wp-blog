@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Start Variables */
 /* End Variables */
 /* Start Global Rules */
@@ -446,6 +447,16 @@ footer .social a svg:hover {
 .comments .comment-respond .logged-in-as a:hover {
   color: #565cee;
   text-decoration: underline;
+}
+.comments .bypostauthor {
+  position: relative;
+}
+.comments .bypostauthor::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "🌟Author";
+  color: #e357ef;
 }
 
 /* End Comments Section */

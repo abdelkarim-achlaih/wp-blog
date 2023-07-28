@@ -585,6 +585,18 @@ footer {
 			}
 		}
 	}
+
+	.bypostauthor {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			content: "🌟Author";
+			color: $three;
+		}
+	}
 }
 
 /* End Comments Section */
