@@ -737,3 +737,27 @@ footer {
 }
 
 /* ------------------------------------ End Author Page ------------------------------------ */
+/* ------------------------------------ Start 404 Not Found Page ------------------------------------ */
+.not_found {
+	.title span {
+		color: $three;
+		font-size: 200px;
+		display: block;
+	}
+
+	a {
+		text-decoration: underline !important;
+		color: $three !important;
+	}
+
+	svg {
+		color: $main;
+	}
+
+	span.quote-author {
+		margin-top: 1rem;
+		display: block;
+	}
+}
+
+/* ------------------------------------ End 404 Not Found Page ------------------------------------ */

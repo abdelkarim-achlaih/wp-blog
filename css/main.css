@@ -555,4 +555,23 @@ footer .social a svg:hover {
     width: 70%;
   }
 }
-/* ------------------------------------ End Author Page ------------------------------------ *//*# sourceMappingURL=main.css.map */
+/* ------------------------------------ End Author Page ------------------------------------ */
+/* ------------------------------------ Start 404 Not Found Page ------------------------------------ */
+.not_found .title span {
+  color: #e357ef;
+  font-size: 200px;
+  display: block;
+}
+.not_found a {
+  text-decoration: underline !important;
+  color: #e357ef !important;
+}
+.not_found svg {
+  color: #705aed;
+}
+.not_found span.quote-author {
+  margin-top: 1rem;
+  display: block;
+}
+
+/* ------------------------------------ End 404 Not Found Page ------------------------------------ *//*# sourceMappingURL=main.css.map */
