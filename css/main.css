@@ -585,4 +585,24 @@ footer .social a svg:hover {
   display: block;
 }
 
-/* ------------------------------------ End 404 Not Found Page ------------------------------------ *//*# sourceMappingURL=main.css.map */
+/* ------------------------------------ End 404 Not Found Page ------------------------------------ */
+/* ------------------------------------ Start Category Page ------------------------------------ */
+.category .title h1 {
+  color: #e357ef;
+  font-size: 50px;
+}
+.category .title p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .category .title h1 {
+    font-size: 28px;
+  }
+  .category .title p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+/* ------------------------------------ End Category Page ------------------------------------ *//*# sourceMappingURL=main.css.map */

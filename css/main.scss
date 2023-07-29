@@ -773,3 +773,34 @@ footer {
 }
 
 /* ------------------------------------ End 404 Not Found Page ------------------------------------ */
+/* ------------------------------------ Start Category Page ------------------------------------ */
+.category {
+	.title {
+		h1 {
+			color: $three;
+			font-size: 50px;
+		}
+
+		p {
+			color: $white-50;
+			margin-bottom: 2.5rem;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.category {
+		.title {
+			h1 {
+				font-size: 28px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 1.8;
+			}
+		}
+	}
+}
+
+/* ------------------------------------ End Category Page ------------------------------------ */
