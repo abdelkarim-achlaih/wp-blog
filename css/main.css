@@ -654,4 +654,11 @@ footer .social a svg:hover {
 }
 /* ------------------------------------ End Category Page ------------------------------------ */
 /* ------------------------------------ Start Breadcrumb ------------------------------------ */
+.breadcrumb-holder li::before {
+  color: #565cee !important;
+}
+.breadcrumb-holder li.active {
+  color: #e357ef !important;
+}
+
 /* ------------------------------------ End Breadcrumb ------------------------------------ *//*# sourceMappingURL=main.css.map */

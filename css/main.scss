@@ -860,6 +860,13 @@ footer {
 /* ------------------------------------ End Category Page ------------------------------------ */
 /* ------------------------------------ Start Breadcrumb ------------------------------------ */
 .breadcrumb-holder {
-	
+	li::before {
+		color: $second !important;
+	}
+
+	li.active {
+		color: $three !important;
+	}
 }
+
 /* ------------------------------------ End Breadcrumb ------------------------------------ */

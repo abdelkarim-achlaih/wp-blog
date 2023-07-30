@@ -1,6 +1,6 @@
 <?php
   get_header();
-  include(get_template_directory() . 'includes/breadcrumb.php');
+  include(get_template_directory() . '/includes/breadcrumb.php');
 ?>
 <section class="blog-post">
   <div class="container">
