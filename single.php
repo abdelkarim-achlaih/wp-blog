@@ -77,7 +77,12 @@
         </div>
       </div>
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">
-        <?php get_sidebar();?>
+        <?php 
+          if(is_active_sidebar('main-sidebar')) {
+            dynamic_sidebar('main-sidebar');
+          }
+          // get_sidebar();
+        ?>
       </div>
     </div>
   </div>

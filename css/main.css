@@ -434,29 +434,36 @@ footer .social a svg:hover {
 /* End Comments Section */
 /* ------------------------------------ End Blog Post Page ------------------------------------ */
 /* ------------------------------------ Start Sidebar ------------------------------------ */
+.main-sidebar,
 .sidebar.card {
   border-color: transparent !important;
   background-color: #101928;
 }
+.main-sidebar .card-header,
 .sidebar.card .card-header {
   color: #705aed;
   border-color: transparent !important;
   background-color: #152744;
 }
+.main-sidebar .card-body,
 .sidebar.card .card-body {
   background-color: #152744;
   border-color: transparent !important;
 }
+.main-sidebar .card-body img,
 .sidebar.card .card-body img {
   border-radius: 45% 75%;
 }
+.main-sidebar .card-body:not(:last-of-type),
 .sidebar.card .card-body:not(:last-of-type) {
   border-bottom: 1px solid #705aed;
 }
+.main-sidebar .card-body .card-title,
 .sidebar.card .card-body .card-title {
   color: #565cee;
   font-size: 16px;
 }
+.main-sidebar .card-body p,
 .sidebar.card .card-body p {
   color: rgba(255, 255, 255, 0.5) !important;
   font-size: 12px;
