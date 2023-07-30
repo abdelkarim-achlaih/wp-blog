@@ -248,6 +248,14 @@ footer {
 			}
 		}
 
+		.latest-author a {
+			color: $white-50 !important;
+
+			&:hover {
+				color: $three !important;
+			}
+		}
+
 		.latest-info img {
 			transition: $duration;
 

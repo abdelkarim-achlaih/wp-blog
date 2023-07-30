@@ -201,6 +201,12 @@ footer .social a svg:hover {
   border-radius: 1rem;
   background-color: white;
 }
+.latest .container .latest-author a {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.latest .container .latest-author a:hover {
+  color: #e357ef !important;
+}
 .latest .container .latest-info img {
   transition: 0.4s;
 }

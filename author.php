@@ -59,7 +59,6 @@
                   <h5 class="fs-5 lh-base text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                 </div>
                 <div class="author-blog-infos text-white-50 text-center">
-                  <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
                   <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
                 </div>
               </div>

@@ -14,7 +14,7 @@
                 ?>
                   <div class="blog-post-author-meta text-center text-white-50 pt-3">
                     <?php echo get_avatar($post, 50) ?>
-                    <span class=""></i><?php the_author(); ?></span>
+                    <span class=""></i><?php the_author_posts_link(); ?></span>
                     <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
                     <span><i class="fa-solid fa-comment"></i><?php comments_number(); ?></span>
                     <span class="post-category"><i class="fa-solid fa-tag"></i><?php the_category(', '); ?></span>

@@ -17,7 +17,7 @@
                     <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']); ?>
                   </div>
                   <div class="card-infos text-white">
-                    <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
+                    <span><i class="fa-solid fa-pen"></i><?php the_author_posts_link(); ?></span>
                     <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
                     <span><i class="fa-solid fa-comment"></i><?php comments_number(); ?></span>
                   </div>

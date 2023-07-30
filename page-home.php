@@ -38,7 +38,7 @@
             <span class="text-white-50"><?php the_time('F j, Y');?></span>
           </div>
           <div class="latest-author text-white-50 mb-4">
-            <?php the_author();?>
+            <?php the_author_posts_link();?>
           </div>
           <h2 class="fw-bold fs-4 mb-4 lh-lg">
             <?php the_title();?>

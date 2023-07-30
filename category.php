@@ -64,7 +64,7 @@
                     <div class="col-md-6 p-2 row align-content-between">
                       
                         <div class="card-infos text-white ps-3">
-                          <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
+                          <span><i class="fa-solid fa-pen"></i><?php the_author_posts_link(); ?></span>
                           <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
                           <h5 class="card-title lh-base mt-2"><?php the_title(); ?></h5>
                         </div>
