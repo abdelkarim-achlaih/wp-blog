@@ -2,7 +2,7 @@
 <section class="category">
   <div class="container">
     <div class="title text-center mb-5">
-      <h1><?php single_cat_title(); ?></h1>
+      <h1 class="mb-5"><?php single_cat_title(); ?></h1>
       <?php echo category_description(); ?>
     </div>
     <div class="row text-center text-md-start">
@@ -15,25 +15,24 @@
           while (have_posts()) {
             the_post();
             ?>
-              <div class="col-lg-4 col-md-6 mb-3">
+              <div class="col-lg-6 col-md-12 mb-3">
                 <div class="card">
-                  <div class="img-holder">
-                    <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']); ?>
-                  </div>
-                  <div class="card-infos text-white">
-                    <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
-                    <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
-                    <span><i class="fa-solid fa-comment"></i><?php comments_number(); ?></span>
-                  </div>
-                  <div class="card-body text-white">
-                    <h5 class="card-title fs-5 fw-bold lh-base"><?php the_title(); ?></h5>
-                    <p class="card-text lh-sm "><?php the_excerpt(); ?></p>
-                    <div class="m-card-footer d-flex justify-content-between align-items-center">
-                      <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read more</a>
-                      <span class="text-end">
-                        <i class="fa-solid fa-tag"></i>
-                        <?php the_category(', '); ?>
-                      </span>
+                  <div class="row g-0">
+                    <div class="img-holder col-md-6">
+                      <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']); ?>
+                    </div>
+                    <div class="col-md-6 p-2 row align-content-between">
+                      
+                        <div class="card-infos text-white ps-3">
+                          <span><i class="fa-solid fa-pen"></i><?php the_author(); ?></span>
+                          <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
+                          <h5 class="card-title lh-base mt-2"><?php the_title(); ?></h5>
+                        </div>
+                        <div class="card-body text-white">
+                          <div class="m-card-footer">
+                            <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read the article</a>
+                          </div>
+                      </div>
                     </div>
                   </div>
                 </div>

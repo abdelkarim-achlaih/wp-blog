@@ -594,6 +594,26 @@ footer .social a svg:hover {
 .category .title p {
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 2.5rem;
+  line-height: 2;
+}
+.category .container > .row {
+  margin-top: 80px;
+}
+.category .card {
+  background-color: #152744;
+}
+.category .card span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.category .card span svg {
+  margin-right: 7px;
+}
+.category .card h5 {
+  font-size: 16px;
+}
+.category .card a {
+  font-size: 12px !important;
 }
 
 @media (max-width: 991px) {
