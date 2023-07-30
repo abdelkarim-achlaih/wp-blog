@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+  get_header();
+  include(get_template_directory() . 'includes/breadcrumb.php');
+?>
 <section class="blog-post">
   <div class="container">
     <div class="row">
