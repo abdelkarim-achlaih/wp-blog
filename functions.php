@@ -206,4 +206,10 @@ function pagiante () {
         ));
     }
 }
-/* End Pagination */
+/* Start Sidebar */
+// function main_sidebar () {
+//     register_sidebar(array(
+
+//     ))
+// }
+/* End Sidebar */

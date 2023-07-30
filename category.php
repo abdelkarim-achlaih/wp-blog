@@ -5,7 +5,7 @@
       <h1 class="mb-5"><?php single_cat_title(); ?></h1>
       <?php echo category_description(); ?>
     </div>
-    <div class="row text-center text-md-start">
+    <div class="row text-center text-md-start justify-content-center">
       <?php
         $args = array(
           'post_type' => 'post', // Set the post type to 'post' to retrieve blog posts
