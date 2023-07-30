@@ -609,6 +609,23 @@ footer .social a svg:hover {
 .category .container > .row {
   margin-top: 80px;
 }
+.category .category-stats div div {
+  background-color: #152744;
+}
+.category .category-stats div div span {
+  display: block;
+}
+.category .category-stats div div span:first-child {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.category .category-stats div div span:first-child svg {
+  color: #705aed;
+  margin-right: 10px;
+}
+.category .category-stats div div span:last-child {
+  font-size: 50px;
+}
 .category .card {
   background-color: #152744;
 }

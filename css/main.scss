@@ -794,6 +794,32 @@ footer {
 		margin-top: 80px;
 	}
 
+	.category-stats {
+		div {
+			div {
+				background-color: $second-dark;
+
+				span {
+					display: block;
+				}
+
+				span:first-child {
+					font-size: 15px;
+					color: $white-50;
+
+					svg {
+						color: $main;
+						margin-right: 10px;
+					}
+				}
+
+				span:last-child {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+
 	.card {
 		background-color: $second-dark;
 

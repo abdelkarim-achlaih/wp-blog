@@ -78,10 +78,10 @@
       </div>
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">
         <?php 
-          if(is_active_sidebar('main-sidebar')) {
-            dynamic_sidebar('main-sidebar');
-          }
-          // get_sidebar();
+          // if(is_active_sidebar('main-sidebar')) {
+          //   dynamic_sidebar('main-sidebar');
+          // }
+          get_sidebar();
         ?>
       </div>
     </div>

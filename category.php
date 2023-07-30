@@ -2,9 +2,49 @@
 <section class="category">
   <div class="container">
     <div class="title text-center mb-5">
-      <h1 class="mb-5"><?php single_cat_title(); ?></h1>
+      <h1 class="mb-5"><?php single_cat_title();?></h1>
       <?php echo category_description(); ?>
     </div>
+
+    <div class="category-stats row text-center fs-5 mt-3 lh-lg text-white mb-5 justify-content-center">
+
+      <div class="col-lg-5 mb-3 col-md-6 ">
+        <div class="rounded p-3">
+          <span><i class="fa-solid fa-pen-to-square"></i>Articles</span>
+          <span>
+            <?php
+              $obj = get_queried_object();
+              echo $obj->count;
+            ?>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-lg-5 mb-3 col-md-6 ">
+        <div class="rounded p-3">
+          <span><i class="fa-solid fa-comment"></i>Comments</span>
+          <span>
+            <?php
+              $comments_count_in_category = 0;
+              $comments = get_comments(array(
+                'status' => 'approve',
+              ));
+              foreach($comments as $comment) {
+                if (! in_category(the_category_ID(false), $comment->comment_post_ID)) {
+                  continue;
+                }
+                else {
+                  $comments_count_in_category++;
+                }
+              }
+              echo $comments_count_in_category;
+            ?>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
     <div class="row text-center text-md-start justify-content-center">
       <?php
         $args = array(
