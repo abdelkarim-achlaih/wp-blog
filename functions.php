@@ -207,9 +207,17 @@ function pagiante () {
     }
 }
 /* Start Sidebar */
-// function main_sidebar () {
-//     register_sidebar(array(
-
-//     ))
-// }
+function main_sidebar () {
+    register_sidebar(array(
+        'name' => 'Main Sidebar',
+        'id' => 'main-sidebar',
+        'Description' => 'This is the Main Sidebar',
+        'class' => 'main-sidebar',
+        'before_widget' => '<div class="card-body mb-3 rounded">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="card-header mb-5 rounded"><h3 class="fw-bold text-white fs-4">',
+        'after_title' => '</h3></div>'
+    ));
+}
+add_action('widgets_init', 'main_sidebar');
 /* End Sidebar */
