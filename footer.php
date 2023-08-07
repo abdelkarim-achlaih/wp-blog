@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row text-white text-md-start text-center">
             <div class="col-lg-4 col-md-6 mb-4">
-                <a href=""><img src="<?php echo get_stylesheet_directory_uri() . '/imgs/logo.png' ?>" alt="logo" class="mb-3"></a>
+                <a href="<?php echo home_url( '/' )?>"><img src="<?php echo get_stylesheet_directory_uri() . '/imgs/logo.png' ?>" alt="logo" class="mb-3"></a>
                 <p class="lh-lg">Unleash the potential of your online presence with my web development expertise. Together, we'll create a captivating digital experience that leaves a lasting impact on your audience. Let's build something amazing!</p>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">

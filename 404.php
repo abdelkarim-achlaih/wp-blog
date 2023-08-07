@@ -9,7 +9,7 @@
       <ul>
         <li class="mb-4">You can try double-checking the URL for any typos or errors.</li>
         <li class="mb-4">Use the navigation menu above to find what you were looking for..</li>
-        <li class="mb-4">Or, you can return to the <a href="<?php get_home_url()?>">Home Page</a> to explore from there.</li>
+        <li class="mb-4">Or, you can return to the <a href="<?php echo home_url( '/' )?>">Home Page</a> to explore from there.</li>
       </ul>
     </div>
     <div class="quotes">

@@ -20,7 +20,7 @@
   <header>
     <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="<?php echo get_template_directory()?>"><img src="<?php echo get_stylesheet_directory_uri() . '/imgs/logo.png' ?>" alt="logo" class="img-fluid"></a>
+      <a class="navbar-brand" href="<?php echo home_url( '/' )?>"><img src="<?php echo get_stylesheet_directory_uri() . '/imgs/logo.png' ?>" alt="logo" class="img-fluid"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
