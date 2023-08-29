@@ -237,6 +237,72 @@ footer .social a svg:hover {
   }
 }
 /* End Latest Section */
+/* Start Hottset Section */
+.hottest {
+  background-color: white;
+}
+.hottest .hot .hot-card {
+  border: 1px solid #705aed;
+}
+.hottest .hot h5 {
+  font-size: 1rem;
+}
+.hottest .hot p {
+  font-size: 0.8rem;
+}
+.hottest .hot .hot-author a {
+  font-size: 0.8rem !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.hottest .hot .btn {
+  font-size: 0.7rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main-title {
+  position: relative;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  border-radius: 1rem;
+  background-color: #705aed;
+}
+.main-title h3 {
+  color: #705aed;
+}
+
+@media (max-width: 991px) {
+  .main-title::after {
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 50%;
+  }
+}
+/* End Hottset Section */
+/* Start Featured Section */
+.featured {
+  background-color: white;
+}
+.featured .featured-1 h5 {
+  font-size: 1.2rem;
+}
+.featured .date {
+  color: #705aed;
+}
+.featured .featured-2 h5 {
+  font-size: 1rem;
+}
+
+/* End Featured Section */
 /* ------------------------------------ End Home Page ------------------------------------ */
 /* ------------------------------------ Start Blogs Page ------------------------------------ */
 /* Start Blogs Section */

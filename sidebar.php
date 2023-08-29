@@ -27,7 +27,7 @@
     wp_reset_postdata();
   ?>
   <div class="card-header mb-3 mt-5 rounded">
-    <h3 class="fw-bold text-white fs-4">Hotest Articles</h3>
+    <h3 class="fw-bold text-white fs-4">Hottest Articles</h3>
   </div>
   <?php
     $args = array(
