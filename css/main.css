@@ -241,8 +241,12 @@ footer .social a svg:hover {
 .hottest {
   background-color: white;
 }
-.hottest .hot .hot-card {
-  border: 1px solid #705aed;
+.hottest .hot {
+  transition: 0.4s;
+}
+.hottest .hot:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  transform: translateY(-10px);
 }
 .hottest .hot h5 {
   font-size: 1rem;
@@ -298,11 +302,41 @@ footer .social a svg:hover {
 .featured .date {
   color: #705aed;
 }
+.featured .featured-2 img {
+  transition: 0.4s;
+}
+.featured .featured-2 img:hover {
+  transform: scale(1.1);
+}
 .featured .featured-2 h5 {
   font-size: 1rem;
 }
 
 /* End Featured Section */
+/* Start Newsletter Section */
+.newsletter {
+  background-color: white;
+}
+.newsletter .container {
+  width: 80%;
+}
+.newsletter .form {
+  background-color: #705aed;
+}
+.newsletter .form form input[type=email] {
+  border: none;
+}
+.newsletter .form form input[type=email]:focus {
+  border: none;
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .newsletter .container {
+    width: 100%;
+  }
+}
+/* End Newsletter Section */
 /* ------------------------------------ End Home Page ------------------------------------ */
 /* ------------------------------------ Start Blogs Page ------------------------------------ */
 /* Start Blogs Section */

@@ -81,7 +81,7 @@
       while ($query->have_posts()) {
         $query->the_post();
         ?>
-        <div class="col-lg-3 col-md-6 mb-3 hot">
+        <div class="col-lg-3 col-md-6 mb-3 hot rounded">
           <div class="hot-card rounded">
             <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']);?>
             <div class="card-body rounded p-2">
@@ -178,6 +178,25 @@
   </div>
 </section>
 <section class="newsletter">
+  <div class="container d-md-flex justify-content-md-center text-center text-lg-start">
+      <div class="form p-5 rounded-4 text-white row align-items-center">
+        <div class="col-lg-7">
+          <h3 class="fw-bold">Blog Email Weekly</h3>
+          <p>Subscribe into our newsletter to be the first to receive our newest blogs</p>
+          <form action="" class="row bg-white p-3 rounded-4 text-lg-start text-center justify-content-between">
+            <div class="col-md-7 mb-3 mb-md-0">
+              <input type="email" name="mail" placeholder="Enter your Email" class="form-control text-lg-start text-center">
+            </div>
+            <div class="col-md-5 text-end">
 
+              <input type="submit" value="Subscribe" class="btn btn-primary rounded-pill">
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5">
+          <img src=<?php echo get_stylesheet_directory_uri() . '/imgs/pc.png'?> alt="" class="img-fluid">
+        </div>
+      </div>
+  </div>
 </section>
 <?php get_footer(); ?>

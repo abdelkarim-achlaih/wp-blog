@@ -301,9 +301,11 @@ footer {
 	background-color: white;
 
 	.hot {
-		.hot-card {
-			border: 1px solid $main;
+		transition: $duration;
 
+		&:hover {
+			box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+			transform: translateY(-10px);
 		}
 
 		h5 {
@@ -376,7 +378,15 @@ footer {
 	.date {
 		color: $main;
 	}
+
 	.featured-2 {
+		img {
+			transition: $duration;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 
 		h5 {
 			font-size: 1rem;
@@ -386,6 +396,40 @@ footer {
 }
 
 /* End Featured Section */
+/* Start Newsletter Section */
+.newsletter {
+	background-color: white;
+
+	.container {
+		width: 80%;
+	}
+
+	.form {
+		background-color: #705aed;
+
+		form {
+			input[type="email"] {
+				border: none;
+
+				&:focus {
+					border: none;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+
+}
+
+@media (max-width: 991px) {
+	.newsletter {
+		.container {
+			width: 100%;
+		}
+	}
+}
+
+/* End Newsletter Section */
 /* ------------------------------------ End Home Page ------------------------------------ */
 /* ------------------------------------ Start Blogs Page ------------------------------------ */
 /* Start Blogs Section */
