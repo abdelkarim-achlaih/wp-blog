@@ -8,7 +8,6 @@ window.onresize = (_) => {
 	setHeight(hotTitle);
 	setHeight(artPara);
 	setHeight(artTitle);
-	console.log(artTitle);
 };
 
 window.onload = (_) => {
