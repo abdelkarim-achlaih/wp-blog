@@ -405,6 +405,7 @@ footer {
 	}
 
 	.form {
+		border-radius: 15px;
 		background-color: #705aed;
 
 		form {
@@ -423,8 +424,12 @@ footer {
 
 @media (max-width: 991px) {
 	.newsletter {
+		.form {
+			border-radius: 0;
+		}
+
 		.container {
-			width: 100%;
+			width: auto;
 		}
 	}
 }

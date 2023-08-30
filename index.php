@@ -11,7 +11,7 @@
           while (have_posts()) {
             the_post();
             ?>
-              <div class="col-lg-4 col-md-6 mb-3">
+              <div class="col-lg-4 col-md-6 mb-3 blog-article">
                 <div class="card">
                   <div class="img-holder">
                     <?php the_post_thumbnail('', ['class' => 'card-img-top img-fluid', 'alt' => 'Feature blog image']); ?>
@@ -23,8 +23,8 @@
                   </div>
                   <div class="card-body text-white">
                     <h5 class="card-title fs-5 fw-bold lh-base"><?php the_title(); ?></h5>
-                    <p class="card-text lh-sm "><?php the_excerpt(); ?></p>
-                    <div class="m-card-footer d-flex justify-content-between align-items-center">
+                    <?php the_excerpt(); ?>
+                    <div class="mt-3 m-card-footer d-flex justify-content-between align-items-center">
                       <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read more</a>
                       <span class="text-end">
                         <i class="fa-solid fa-tag"></i>

@@ -321,6 +321,7 @@ footer .social a svg:hover {
   width: 80%;
 }
 .newsletter .form {
+  border-radius: 15px;
   background-color: #705aed;
 }
 .newsletter .form form input[type=email] {
@@ -332,8 +333,11 @@ footer .social a svg:hover {
 }
 
 @media (max-width: 991px) {
+  .newsletter .form {
+    border-radius: 0;
+  }
   .newsletter .container {
-    width: 100%;
+    width: auto;
   }
 }
 /* End Newsletter Section */
