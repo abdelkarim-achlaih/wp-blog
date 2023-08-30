@@ -182,15 +182,7 @@
         <div class="col-lg-7 mb-5">
           <h3 class="fw-bold mb-3">Blog Email Weekly</h3>
           <p class="mb-5">Subscribe into our newsletter to be the first to receive our newest blogs</p>
-          <form action="" class="row bg-white p-3 rounded text-lg-start text-center justify-content-between">
-            <div class="col-md-7 mb-3 mb-md-0">
-              <input type="email" name="mail" placeholder="Enter your Email" class="form-control text-lg-start text-center">
-            </div>
-            <div class="col-md-5 text-lg-end text-center">
-
-              <input type="submit" value="Subscribe" class="btn btn-primary rounded-pill">
-            </div>
-          </form>
+          <?php echo do_shortcode('[mc4wp_form id=78]');?>
         </div>
         <div class="col-lg-5">
           <img src=<?php echo get_stylesheet_directory_uri() . '/imgs/pc.png'?> alt="" class="img-fluid">
